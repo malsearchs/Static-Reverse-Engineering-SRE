@@ -28,6 +28,35 @@ The tool works only on command line, that can be used to perform static reverse 
 
      _TIP:  if the binary file's name as 'malware.exe', recommended rename it as 'malware_exe' to create meaningful output directory and file names._
 
+**Advantages:**
+- The complete command-line tool with text files as output. <First of this kind I guess!>
+- The outcome text files makes useful in further analyze the results and/or create a detailed report and to write custom Yara rules.  Also these dump very handy during Dynamic Analysis of this sample.
+- It is a command line tool, which makes it easy to use and automate, also can be customized further for more specialized research.
+
+**Limitations:**
+-  Its all command-line based and no GUI treats!
+-  Supports only EXE, DLL file formates (as of now)
+-  It may not be a perfect tool, and it might skip some stuff.
+
+Overall, its a valuable tool for performing static reverse engineering on malwares and any binary files. It is easy to use, and it can be used to dump all the outcome as text files, which makes it easy to further analyze the results and/or create a detailed report.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
