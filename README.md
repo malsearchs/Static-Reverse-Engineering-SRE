@@ -1,33 +1,27 @@
 # Static Reverse Engineering [SRE] tool
-Static Reverse Engineering &lt;command-line tool>
+Static Reverse Engineering &lt;the complete command-line tool>
 
 
 The command line tool is designed to conduct static analysis on binary files, such as malware samples, to gather valuable information without executing the file. It offers a comprehensive set of analysis techniques and generates text files containing the outcomes for further analysis or report creation.
 
-Key Features:
+_**Key Features:**_
+
 **Static Analysis:** The tool performs static analysis, which means it examines the binary file without executing or running it. This helps in understanding the characteristics and potential behavior of the file.
 
-**Text File Output:** The tool saves the analysis results as text files. This format is chosen to facilitate easy access, review, and further analysis of the collected information. It allows analysts to search, filter, and process the data conveniently.
+**Text File based Output:** The tool saves the analysis outcome as text file. This format is chosen to facilitate easy access, review, and further analysis of the collected information. It allows analysts to search, filter, and process the data conveniently.  Also very helpful to write custom 'Yara rules'.
 
-**200+ Checkpoints:** The tool encompasses 90 different checkpoints categorized into nine distinct categories. These checkpoints cover a wide range of analysis techniques, aiming to provide a comprehensive assessment of the binary file.
+**200+ Checkpoints:** The tool encompasses 90 different checkpoints categorized into nine distinct categories. These checkpoints cover a wide range of analysis techniques, aiming to provide a comprehensive data of the binary file.
 
 **Categories of Analysis:**
-File Metadata: Extracts and analyzes the metadata associated with the binary file, such as version information, product details, and original filename.
-
-**Strings Analysis:** Searches for ASCII and Unicode strings embedded within the binary file. These strings can provide valuable insights into the file's purpose, behavior, or potential IOCs (indicators of compromise).
-
-**Code Analysis:** Disassembles the executable code within the binary file to analyze the instructions, control flow, and potentially malicious behavior.
-
-**API Function Analysis:** Examines the imported and exported API (Application Programming Interface) functions used by the binary. API functions play a crucial role in the interaction between software components and can indicate the intended functionality or potential malicious activities.
-
-Network Traffic Analysis: Analyzes the binary file to identify any potential network-related activities, such as communication with specific IP addresses, domains, or URLs. This helps in detecting possible command and control (C2) communication or data exfiltration attempts.
-Cryptographic Analysis: Checks for cryptographic algorithms or operations within the binary file. This can reveal encryption or decryption routines that the malware might employ.
-
-Resource Analysis: Examines any embedded resources, such as images, configuration files, or other files within the binary. These resources might contain additional information or artifacts related to the file's functionality or payload.
-
-**Anti-Analysis Techniques:** Detects any anti-analysis techniques employed by the binary, such as packers, obfuscation, or code encryption. This helps in understanding the complexity of the file and identifying the measures taken to evade detection or analysis.
-
-**Miscellaneous Checks:** Covers various other checks that don't fit into the above categories but are still relevant for static analysis, such as file size, entropy, presence of debugging information, or suspicious file extensions.
+  **Integrity Analyse
+  Metadata Analyse
+  Packer Detection
+  Api Analyse
+  String Analyse
+  IoC Extraction => 
+  Malicious Behaviour Analyse 
+  Disasmembly Dump
+  VirusTotal Check**  _Note: this will not submit the samples to VT._
 
 By performing a thorough analysis across these nine categories and 200+ checkpoints, the tool aims to provide a comprehensive understanding of the binary file's characteristics, behavior, and potential risks.
 
