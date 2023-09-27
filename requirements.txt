@@ -1,7 +1,0 @@
-# sre - required python modules
-
-lief==0.13.2
-pefile==2022.5.30
-python_magic==0.4.26
-Requests==2.31.0
-yara_python==4.2.0
