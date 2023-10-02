@@ -32,8 +32,8 @@ if '-vv' in sys.argv or '-f' in sys.argv:
     parser.add_argument('filename', nargs='?', help="~state file path [to scan single file] or state folder path [to scan multiple files]\n")
 else:
     parser.add_argument('filename', nargs='?', help="~state file path [to scan single file] or state folder path [to scan multiple files]\n")
-parser.add_argument('-V', '--verbose', action='store_true', help='enable verbose output')
-parser.add_argument("-f",  "--file", action="store_true", help='if you need to check the file type first..')
+parser.add_argument('-V', '--verbose', action='store_true', help='enable verbose terminal output')
+parser.add_argument("-f",  "--file", action="store_true", help='check the file type only (before analyse)')
 parser.add_argument('-v',  '--version', action="version", version=f"\n SRE {__version__}\n Release", help="show version info")
 parser.add_argument('-i',  '--info', action="store_true", help=f"show author, email and url info")
 parser.add_argument('-l',  '--license', action="store_true", help="show license info")
