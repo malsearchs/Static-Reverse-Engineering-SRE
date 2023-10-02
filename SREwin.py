@@ -117,7 +117,7 @@ if args.verbose:
         if "PE32" in file_type  or "PE32+" in file_type or "DLL" in file_type:
             print("Done!")
             print(f"\nAnalysing {file_name} _")
-            from integrity_analyse import generate_file_hashes
+            from integrity_analyse import calculate_file_hashes
             from metadata_analyse import analyze_metadata
             from string_analyse import analyze_strings
             from api_analyse import analyze_apis
@@ -132,7 +132,7 @@ if args.verbose:
             try:
                 print("   Extracting Hashes...", end=" ", flush=True)
                 integrity_output = os.path.join(output_dir, f"{file_name}_integrity_hashes.txt")
-                generate_file_hashes(file_path, integrity_output)
+                calculate_file_hashes(file_path, integrity_output)
                 print("Done!")
             except Exception as e:
                 print(f"An error occurred: {e}")
@@ -233,7 +233,7 @@ else:
         file_type = magic.from_file(file_path)
         if "PE32" in file_type  or "PE32+" in file_type or "DLL" in file_type:
             print(f"\nAnalysing {file_name} _")
-            from integrity_analyse import generate_file_hashes
+            from integrity_analyse import calculate_file_hashes
             from metadata_analyse import analyze_metadata
             from string_analyse import analyze_strings
             from api_analyse import analyze_apis
@@ -247,7 +247,7 @@ else:
         # Perform file integrity analysis
             try:
                 integrity_output = os.path.join(output_dir, f"{file_name}_integrity_hashes.txt")
-                generate_file_hashes(file_path, integrity_output)
+                calculate_file_hashes(file_path, integrity_output)
             except Exception as e:
                 print(f"An error occurred: {e}")
 
