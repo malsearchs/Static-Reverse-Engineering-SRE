@@ -20,7 +20,7 @@ from datetime import timedelta
 start_time = time.time()
 
 # Create the argument parser and define the required input parameter
-class CustomFormatter(argparse.RawDescriptionHelpFormatter):  # Create a custom formatter class
+class CustomFormatter(argparse.RawDescriptionHelpFormatter):
     def _format_text(self, text):
         return text + '\n\n'
 # Check for incorrect options iseeulol!
@@ -88,7 +88,6 @@ if args.file:
                     print(f"\nIdentifying filetype _ ")  
                     for part in file_type_parts:
                         if "PE32" in part or "Intel" in part:
-                            #print(f"\t{args.filename} is PE32/DLL\n")
                             print(f"   File Type >>  {part.strip()}")
                     print(f"   MIME Type >>  {file_mime}")
                     print(f"   Supported File Type! Proceed to SRE.\n")
