@@ -43,6 +43,7 @@ def categorize_entropy(entropy_value):
         return 'Low Entropy'
 
 # Get the details of the packers
+# Thanks for Yara rules: https://github.com/Yara-Rules/rules 
 def detect_packers(file_name, output_file):
     try:
         peid = yara.compile('config/peid.yar')
