@@ -128,7 +128,7 @@ if args.verbose:
             print(f"\nAnalysing \033[4;33m{file_name}\033[0m\033[1;91m\033[32;5m _\033[0m")
             from integrity_analyse import calculate_file_hashes
             from metadata_analyse import analyze_metadata
-            from string_analyse import analyze_strings
+            from strings_analyse import analyze_strings
             from api_analyse import analyze_apis
             from packer_detections import detect_packers
             from ioc_extracts import extract_iocs
@@ -245,7 +245,7 @@ else:
             print(f"\nAnalysing \033[4;33m{file_name}\033[0m\033[1;91m\033[32;5m _\033[0m")
             from integrity_analyse import calculate_file_hashes
             from metadata_analyse import analyze_metadata
-            from string_analyse import analyze_strings
+            from strings_analyse import analyze_strings
             from api_analyse import analyze_apis
             from packer_detections import detect_packers
             from ioc_extracts import extract_iocs
